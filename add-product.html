@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto - Ferretería</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>DB.INVENTORY</h2>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="low-stock.html"><i class="fas fa-exclamation-triangle"></i> Productos Bajos</a></li>
+            <li><a href="add-product.html"><i class="fas fa-plus-circle"></i> Agregar Producto</a></li>
+            <!-- Otros enlaces aquí -->
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Agregar Producto</h1>
+        </header>
+        <div class="form-container">
+            <form id="addProductForm">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" name="categoria" required>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required>
+
+                <label for="imagen">Imagen del Producto:</label>
+                <input type="text" id="imagen" name="imagen" placeholder="URL de la imagen" required>
+
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

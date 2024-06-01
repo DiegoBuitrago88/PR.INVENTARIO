@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Inventario - Ferretería</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>DB.INVENTORY</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li ><a href="add-product.html"><i class="fas fa-boxes"></i><div class="inventarios">Inventario</div> </a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Ventas</a></li>
+            <li><a href="#"><i class="fas fa-truck"></i> Proveedores</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Clientes</a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i> Configuración</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard de Inventario</h1>
+            <div class="search-wrapper">
+                <input type="text" placeholder="Buscar...">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <h3>Productos Totales</h3>
+                <p id="total-products">0</p>
+                <i class="fas fa-box-open"></i>
+            </div>
+            <div class="card" id="low-stock-card">
+                <h3>Productos Bajos</h3>
+                <p id="low-stock-products">0</p>
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="card">
+                <h3>Ventas del Mes</h3>
+                <p id="monthly-sales">$0</p>
+                <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="card">
+                <h3>Proveedores Activos</h3>
+                <p>10</p>
+                <i class="fas fa-truck"></i>
+            </div>
+        </div>
+        <div class="inventory-table">
+            <h2>Inventario Detallado</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas generadas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
