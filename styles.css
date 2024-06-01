@@ -1,144 +1,267 @@
 /* Estilos para el dashboard con tonos de azul oscuro, blanco y grises */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
 }
 
 .sidebar {
-    width: 250px;
-    background-color: #01386e;
-    color: #fff;
-    padding: 20px;
+  width: 250px;
+  background-color: #01386e;
+  color: #fff;
+  padding: 20px;
 }
 
 .sidebar h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .sidebar ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .sidebar ul li {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .sidebar ul li a i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .main-content {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .search-wrapper input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #01386e;
-    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #01386e;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .search-wrapper input:focus {
-    outline: none;
-    border-color: #007bff;
-    background-color: #007bff;
-    color: #fff;
+  outline: none;
+  border-color: #007bff;
+  background-color: #007bff;
+  color: #fff;
 }
 
 .search-wrapper i {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    color: #01386e;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #01386e;
 }
 
 .cards {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .card {
-    background: #fff;
-    color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background 0.3s;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .card:hover {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 .card h3 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .card p {
-    font-size: 24px;
-    margin: 10px 0;
+  font-size: 24px;
+  margin: 10px 0;
 }
 
 .card i {
-    font-size: 24px;
-    color: #6c757d;
+  font-size: 24px;
+  color: #6c757d;
 }
 
 .inventory-table {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .inventory-table h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: left;
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
 th {
-    background: #01386e;
-    color: #fff;
+  background: #01386e;
+  color: #fff;
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para las tarjetas */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 5px 0;
 }
