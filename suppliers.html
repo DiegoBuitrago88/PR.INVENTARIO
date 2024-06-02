@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos Bajos - Ferretería</title>
+    <title>Proveedores - Ferretería</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="sidebar">
         <h2>DB.INVENTORY</h2>
@@ -21,18 +19,37 @@
     </div>
     <div class="main-content">
         <header>
-            <h1>Productos Bajos</h1>
+            <h1>Proveedores</h1>
         </header>
+        <div class="supplier-form">
+            <h2>Agregar Proveedor</h2>
+            <form id="supplierForm">
+                <label for="supplierName">Nombre del Proveedor:</label>
+                <input type="text" id="supplierName" name="supplierName" required>
+
+                <label for="productsSupplied">Productos Suministrados:</label>
+                <input type="text" id="productsSupplied" name="productsSupplied" required>
+
+                <label for="supplierPhone">Teléfono:</label>
+                <input type="text" id="supplierPhone" name="supplierPhone" required>
+
+                <label for="supplierAddress">Dirección:</label>
+                <input type="text" id="supplierAddress" name="supplierAddress" required>
+
+                <button type="submit">Agregar Proveedor</button>
+            </form>
+        </div>
+
         <div class="inventory-table">
-            <h2>Productos con Stock Bajo</h2>
-            <table id="lowStockTable">
+            <h2>Lista de Proveedores</h2>
+            <table id="supplierTable">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
-                        <th>Categoría</th>
-                        <th>Cantidad</th>
-                        <th>Precio</th>
+                        <th>Productos Suministrados</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,7 +58,6 @@
             </table>
         </div>
     </div>
-    <script src="lowstock.script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
